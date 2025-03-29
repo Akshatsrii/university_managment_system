@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Portal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f9fb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #5c6bc0, #3949ab);
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #e0e0e0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #3949ab;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #3949ab;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #303f9f;
+    }
+
+    .testimonial {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #e0e0e0;
+      padding: 20px;
+      text-align: center;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Alumni Portal</h1>
+    <p>Stay connected. Share memories. Grow together.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Register/Login</a>
+    <a href="#">Events</a>
+    <a href="#">Notable Alumni</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Alumni Registration / Login</h2>
+      <div class="card">
+        <p>Already an alumni member? <a href="#" class="btn">Login</a></p>
+        <p>New here? <a href="#" class="btn">Register Now</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Upcoming Reunions & Events</h2>
+      <div class="card">
+        <p><strong>2025 Annual Alumni Meet</strong><br>
+        📅 Date: June 15, 2025<br>
+        📍 Venue: University Auditorium<br>
+        <a href="#" class="btn">RSVP</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Notable Alumni</h2>
+      <div class="card">
+        <p><strong>Dr. Meera Rajan</strong> – CEO of InnovateTech, Class of 2002</p>
+        <p class="testimonial">"My time here laid the foundation for a lifetime of learning and leadership."</p>
+      </div>
+      <div class="card">
+        <p><strong>Arjun Nair</strong> – Director, Global Marketing at Nestle, Class of 2010</p>
+        <p class="testimonial">"The friendships and mentors I found here are still guiding me today."</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Get in Touch</h2>
+      <div class="card">
+        <p>📧 Email: <strong>alumni@university.edu</strong></p>
+        <p>📞 Phone: <strong>+91-9876543210</strong></p>
+        <p>📍 Address: Alumni Office, Main Campus, University Lane</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 University Alumni Network. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administration Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #34495e;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #21618c;
+    }
+
+    .quick-links a {
+      display: inline-block;
+      background-color: #34495e;
+      color: white;
+      padding: 14px 18px;
+      margin: 10px 8px 0 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .quick-links a:hover {
+      background-color: #2c3e50;
+    }
+
+    footer {
+      background-color: #ecf0f1;
+      padding: 20px;
+      text-align: center;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .quick-links a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Administration Portal</h1>
+    <p>Manage, Monitor, and Maintain University Operations</p>
+  </header>
+
+  <nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Login</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Admin Login</h2>
+      <div class="form-group">
+        <label for="admin-id">Admin ID</label>
+        <input type="text" id="admin-id" placeholder="Enter your ID" />
+      </div>
+      <div class="form-group">
+        <label for="admin-pass">Password</label>
+        <input type="password" id="admin-pass" placeholder="Enter password" />
+      </div>
+      <a href="#" class="btn">Login</a>
+    </div>
+
+    <div class="card">
+      <h2>Important Notices</h2>
+      <ul>
+        <li>📌 Faculty meeting scheduled on April 2nd, 2025.</li>
+        <li>📌 Budget reports to be submitted by April 10th.</li>
+        <li>📌 Campus maintenance updates available under Facilities tab.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Quick Actions</h2>
+      <div class="quick-links">
+        <a href="#">Manage Students</a>
+        <a href="#">Manage Staff</a>
+        <a href="#">Attendance Reports</a>
+        <a href="#">Fees & Finance</a>
+        <a href="#">Add Announcement</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact IT Support</h2>
+      <p>📧 Email: adminsupport@university.edu</p>
+      <p>📞 Phone: +91-9876543210</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 University Administration Portal. All rights reserved.
+  </footer>
+
+</body>
+</html>

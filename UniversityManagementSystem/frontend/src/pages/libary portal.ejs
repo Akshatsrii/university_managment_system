@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Portal Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1510936111840-65e151ad71bb') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .login-container {
+      background: rgba(0, 30, 60, 0.9);
+      padding: 40px 30px;
+      border-radius: 12px;
+      width: 360px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .login-container h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #00ccff;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .login-container label {
+      font-size: 14px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007acc;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #005999;
+    }
+
+    .remember-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .remember-box input {
+      margin-right: 10px;
+    }
+
+    .login-container .footer-links {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .login-container .footer-links a {
+      color: #66ccff;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .login-container .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Library Portal</h2>
+    <p>Access your books, records & digital library</p>
+
+    <form>
+      <label for="libraryId">Library ID / Email</label>
+      <input type="text" id="libraryId" placeholder="Enter your Library ID or Email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your Password">
+
+      <div class="remember-box">
+        <input type="checkbox" id="rememberMe" checked>
+        <label for="rememberMe">Remember Me</label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="footer-links">
+      <a href="#">Forgot Password?</a> |
+      <a href="#">Register Now</a>
+    </div>
+  </div>
+
+</body>
+</html>
