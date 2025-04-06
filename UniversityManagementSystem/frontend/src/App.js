@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 // Example route
 app.get('/', (req, res) => {
-  res.render('index'); // Make sure you have a file src/views/index.ejs
+  res.render('home'); // Make sure you have a file src/views/index.ejs
 });
 
 app.listen(PORT, () => {
